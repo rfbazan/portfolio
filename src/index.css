@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Montserrat', sans-serif;
+  --color-blue-primary: #2563eb;
+  --color-blue-light: #eff6ff;
+  --color-blue-muted: #93c5fd;
+}
+
+.dark body {
+  background-color: #15161a;
+  color: #f1f5f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* All headings use font-variant small-caps so uppercase styling applies even to lowercase letters */
+h1, h2, h3, h4, h5, h6 {
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
