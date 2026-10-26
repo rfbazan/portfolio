@@ -53,11 +53,11 @@ export default function ExperienceCard({
         </div>
 
         {/* Company logo  */}
-        <div
-          className="h-12 shrink-0 overflow-hidden rounded-lg border border-gray-300 flex items-center justify-center"
-        >
-            <img src={logo} alt={`${company} logo`} className="h-full w-full object-contain" />
-        </div>
+        <img
+          src={logo}
+          alt={`${company} logo`}
+          className="h-12 w-auto shrink-0 rounded-lg border border-gray-300"
+        />
 
         {/* Chevron */}
         <motion.span
