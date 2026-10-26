@@ -3,11 +3,13 @@ import { useTheme } from '../hooks/ThemeContext'
 import Badge from '../ui/Badge'
 import { IconGitHub, IconLinkedIn, IconResume, IconMail } from '../ui/Icons'
 
+const base = import.meta.env.BASE_URL
+
 const iconLinks = [
   { icon: IconGitHub, href: 'https://github.com/RazrGator', label: 'GitHub' },
   { icon: IconLinkedIn, href: 'http://linkedin.com/in/rodrigo-bazan-aranda', label: 'LinkedIn' },
   { icon: IconMail, href: 'mailto:rodrigofbazan@gmail.com', label: 'Email' },
-  { icon: IconResume, href: '/resume.pdf', label: 'Resume' },
+  { icon: IconResume, href: `${base}resume.pdf`, label: 'Resume' },
 ]
 
 export default function Hero() {
@@ -28,7 +30,7 @@ export default function Hero() {
             dark ? 'bg-slate-700' : 'bg-blue-50'
           }`}>
             <img
-              src="/images/gown_portrait.JPEG"
+              src={`${base}images/gown_portrait.JPEG`}
               alt="Rodrigo Bazan"
               className="w-full h-full object-cover object-top"
               onError={(e) => { e.target.style.display = 'none' }}

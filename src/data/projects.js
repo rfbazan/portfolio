@@ -1,4 +1,5 @@
 // src/data/projects.js
+const base = import.meta.env.BASE_URL
 
 export const projects = [
   {
@@ -6,12 +7,12 @@ export const projects = [
     title: "Pickleball Tournament App",
     tagline: "Manages team creation, drafting, and point submissions for 40+ users.",
     category: "software",
-    image: "/images/pickleball-app.png",
+    image: `${base}images/pickleball-app.png`,
     // Additional modal gallery images
     images: [
-      "/images/draft.png",
-      "/images/leaderboard.png",
-      "/images/tournament.png",
+      `${base}images/draft.png`,
+      `${base}images/leaderboard.png`,
+      `${base}images/tournament.png`,
     ],
     link: "https://github.com/rfbazan",
     stack: ["Flask", "Python", "HTML/CSS"],
@@ -28,12 +29,12 @@ export const projects = [
     title: "NBA Fan App",
     tagline: "Full-stack sports app with the ESPN API feeding live score data.",
     category: "software",
-    image: "/images/ballerzonly.PNG",
+    image: `${base}images/ballerzonly.PNG`,
     // Additional modal gallery images
     images: [
-      "/images/nbafavs.PNG",
-      "/images/feed2.PNG",
-      "/images/profile.PNG",
+      `${base}images/nbafavs.PNG`,
+      `${base}images/feed2.PNG`,
+      `${base}images/profile.PNG`,
     ],
     link: "https://github.com/rfbazan",
     stack: ["React", "Node.js", "MySQL"],
@@ -50,12 +51,12 @@ export const projects = [
     title: "Athlete Tracking System",
     tagline: "Real-time player positioning via trilateration complete with data visualizations and analysis.",
     category: "embedded",
-    image: "/images/soccersense.PNG",
+    image: `${base}images/soccersense.PNG`,
     // Additional modal gallery images
     images: [
-      "/images/fieldsize.PNG",
-      "/images/ctrlpanel.PNG",
-      "/images/housing.PNG",
+      `${base}images/fieldsize.PNG`,
+      `${base}images/ctrlpanel.PNG`,
+      `${base}images/housing.PNG`,
     ],
     link: "https://github.com/rfbazan",
     stack: ["ESP32", "Python", "HTML/CSS"],

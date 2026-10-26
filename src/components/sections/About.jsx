@@ -4,12 +4,14 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useTheme } from '../hooks/ThemeContext'
 import { IconX } from '../ui/Icons'
 
+const base = import.meta.env.BASE_URL
+
 const PHOTOS = [
-  { src: '/images/waterfall.jpeg', alt: 'Waterfall', rotate: -6, lift: 8 },
-  { src: '/images/buggie.jpeg', alt: 'Buggie', rotate: 3, lift: -6 },
-  { src: '/images/centralpark.jpeg', alt: 'Central Park', rotate: -2, lift: 10 },
-  { src: '/images/sand.jpeg', alt: 'Sandboarding', rotate: 5, lift: -4 },
-  { src: '/images/escape.jpeg', alt: 'Escape Room', rotate: -4, lift: 6 },
+  { src: `${base}images/waterfall.jpeg`, alt: 'Waterfall', rotate: -6, lift: 8 },
+  { src: `${base}images/buggie.jpeg`, alt: 'Buggie', rotate: 3, lift: -6 },
+  { src: `${base}images/centralpark.jpeg`, alt: 'Central Park', rotate: -2, lift: 10 },
+  { src: `${base}images/sand.jpeg`, alt: 'Sandboarding', rotate: 5, lift: -4 },
+  { src: `${base}images/escape.jpeg`, alt: 'Escape Room', rotate: -4, lift: 6 },
 ]
 
 export default function About() {
