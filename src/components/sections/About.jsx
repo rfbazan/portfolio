@@ -75,7 +75,7 @@ export default function About() {
         </div>
  
         {/* About text */}
-        <div className="flex flex-col gap-3 px-20 max-w-5xl mx-auto ">
+        <div className="flex flex-col gap-3 mx-auto tracking-wide">
           <p className={bodyText}>
             I grew up in South Florida and graduated from UF in May 2026 with a B.S. in
             Computer Engineering. I'm a tinkerer at heart, driven by creativity and the

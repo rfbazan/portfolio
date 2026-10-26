@@ -14,7 +14,7 @@ const iconLinks = [
 
 export default function Hero() {
   const { dark } = useTheme()
-  const skills = ["Python", "Java", "SQL", "Git", "React", "C/C++", "Node.js", "JavaScript"]
+  const skills = ["Python", "Java", "SQL", "Git", "React", "C/C++", "Flask", "Node.js", "JavaScript"]
 
   return (
     <section
