@@ -44,7 +44,7 @@ export default function Hero() {
           {/* Name row: name on the left, + circular headshot on the right (mobile only) */}
           <div className="flex items-center justify-between gap-4">
             <h1
-              className={`text-5xl sm:text-7xl md:text-7xl font-extrabold leading-tight tracking-wide ${
+              className={`text-4xl sm:text-7xl md:text-7xl font-extrabold leading-tight tracking-wide ${
                 dark ? 'text-slate-100' : 'text-gray-950'
               }`}
               style={{ fontVariant: 'small-caps' }}
@@ -53,7 +53,7 @@ export default function Hero() {
             </h1>
 
             {/* ===== MOBILE ONLY headshot — edit size / crop / ring here ===== */}
-            <div className={`ring-1 ring-gray-700 md:hidden shrink-0 h-33 w-33 sm:h-50 sm:w-50 rounded-full overflow-hidden shadow-md${
+            <div className={`ring-1 ring-gray-700 md:hidden shrink-0 h-32 w-32 sm:h-50 sm:w-50 rounded-full overflow-hidden shadow-md${
               dark ? 'bg-slate-700' : 'bg-blue-50'
             }`}>
               <img
