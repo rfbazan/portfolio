@@ -53,7 +53,7 @@ export default function Hero() {
             </h1>
 
             {/* ===== MOBILE ONLY headshot — edit size / crop / ring here ===== */}
-            <div className={`ring-1 ring-gray-700 md:hidden shrink-0 h-36 w-36 sm:h-50 sm:w-50 rounded-full overflow-hidden shadow-md${
+            <div className={`ring-1 ring-gray-700 md:hidden shrink-0 h-33 w-33 sm:h-50 sm:w-50 rounded-full overflow-hidden shadow-md${
               dark ? 'bg-slate-700' : 'bg-blue-50'
             }`}>
               <img
