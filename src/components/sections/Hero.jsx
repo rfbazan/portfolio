@@ -24,9 +24,9 @@ export default function Hero() {
       {/* Top: photo + text side by side */}
       <div className="max-w-5xl w-full flex flex-col md:flex-row items-stretch gap-12">
 
-        {/* Left — tall rectangular headshot */}
-        <div className="flex-shrink-0 w-full md:w-80">
-          <div className={`w-full h-96 md:h-full min-h-96 rounded-2xl overflow-hidden shadow-md ${
+        {/* Left — DESKTOP ONLY tall rectangular headshot (hidden below md) */}
+        <div className="hidden md:block flex-shrink-0 md:w-80">
+          <div className={`w-full h-full min-h-96 rounded-2xl overflow-hidden shadow-md ${
             dark ? 'bg-slate-700' : 'bg-blue-50'
           }`}>
             <img
@@ -41,19 +41,34 @@ export default function Hero() {
         {/* Right — name, tagline, intro, icons */}
         <div className="flex flex-col justify-center gap-6 flex-1">
 
-          {/* Name */}
-          <h1
-            className={`text-6xl md:text-7xl font-extrabold leading-tight tracking-wide ${
-              dark ? 'text-slate-100' : 'text-gray-950'
-            }`}
-            style={{ fontVariant: 'small-caps' }}
-          >
-            Rodrigo Bazan
-          </h1>
+          {/* Name row: name on the left, + circular headshot on the right (mobile only) */}
+          <div className="flex items-center justify-between gap-4">
+            <h1
+              className={`text-5xl sm:text-7xl md:text-7xl font-extrabold leading-tight tracking-wide ${
+                dark ? 'text-slate-100' : 'text-gray-950'
+              }`}
+              style={{ fontVariant: 'small-caps' }}
+            >
+              Rodrigo<br className="md:hidden" /> Bazan
+            </h1>
+
+            {/* ===== MOBILE ONLY headshot — edit size / crop / ring here ===== */}
+            <div className={`ring-1 ring-gray-700 md:hidden shrink-0 h-36 w-36 sm:h-50 sm:w-50 rounded-full overflow-hidden shadow-md${
+              dark ? 'bg-slate-700' : 'bg-blue-50'
+            }`}>
+              <img
+                src={`${base}images/gown_portrait.JPEG`}
+                alt="Rodrigo Bazan"
+                className="w-full h-full object-cover object-[center_15%] scale-200 origin-[48%_50%]"
+                onError={(e) => { e.target.style.display = 'none' }}
+              />
+            </div>
+            {/* ===== end mobile only ===== */}
+          </div>
 
           {/* Tagline */}
           <p className={`text-base font-medium tracking-wide ${
-            dark ? 'text-blue-400' : 'text-blue-600'
+            dark ? 'text-blue-400' : 'text-blue-700'
           }`}>
             Developer · Full-Stack & Automation
             <br></br>
@@ -61,7 +76,7 @@ export default function Hero() {
           </p>
 
           {/* Divider */}
-          <div className={`w-50 h-px ${dark ? 'bg-orange-600' : 'bg-orange-400'}`} />
+          <div className={`w-50 h-px ${dark ? 'bg-orange-500' : 'bg-orange-600'}`} />
 
           {/* Intro blurb */}
           <p className={`text-med font-medium leading-loose max-w-[50vh] ${
@@ -94,10 +109,10 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 aria-label={label}
                 className={`transition-colors hover:text-blue-600 ${
-                  dark ? 'text-slate-400' : 'text-gray-500'
+                  dark ? 'text-slate-300' : 'text-gray-700'
                 }`}
               >
-                <Icon size={26} />
+                <Icon size={36} />
               </a>
             ))}
           </div>

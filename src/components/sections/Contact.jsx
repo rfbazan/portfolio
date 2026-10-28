@@ -62,12 +62,12 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="flex items-center gap-4 group w-fit"
             >
-              <span className="text-blue-400 group-hover:text-blue-600 transition-colors">
-                <Icon size={26} />
+              <span className="text-blue-500 group-hover:text-blue-600 transition-colors">
+                <Icon size={30} />
               </span>
               <span
                 className={`font-medium group-hover:text-blue-600 transition-colors tracking-wide ${
-                  dark ? 'text-slate-200' : 'text-gray-800'
+                  dark ? 'text-white' : 'text-black'
                 }`}
                 style={{ fontVariant: 'small-caps' }}
               >

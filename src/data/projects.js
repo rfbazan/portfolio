@@ -25,6 +25,28 @@ export const projects = [
     },
   },
   {
+    id: 1,
+    title: "Athlete Tracking System",
+    tagline: "Real-time player positioning via trilateration complete with data visualizations and analysis.",
+    category: "embedded",
+    image: `${base}images/soccersense.PNG`,
+    // Additional modal gallery images
+    images: [
+      `${base}images/fieldsize.PNG`,
+      `${base}images/ctrlpanel.PNG`,
+      `${base}images/housing.PNG`,
+    ],
+    link: "https://github.com/rfbazan",
+    stack: ["ESP32", "Python", "Flask"],
+    detail: {
+      problem: "Position tracking data in sports provides a proven competitive advantage for athletes, but is commonly too expensive and impractical to set up for an amateur player",
+      solution: "Built a UWB-based trilateration system using ESP32 modules as anchors and a central Python backend to compute and visualize player coordinates in real time. This allowed for users to get all the benefits and precision the pros get, at a fraction of the cost.",
+      architecture: "UNDER CONSTRUCTION...",
+      challenges: "UNDER CONSTRUCTION...",
+      improvements: "UNDER CONSTRUCTION...",
+    },
+  },
+  {
     id: 4,
     title: "NBA Fan App",
     tagline: "Full-stack sports app with the ESPN API feeding live score data.",
@@ -46,28 +68,6 @@ export const projects = [
       improvements: "UNDER CONSTRUCTION...",
     },
   },
-  {
-    id: 1,
-    title: "Athlete Tracking System",
-    tagline: "Real-time player positioning via trilateration complete with data visualizations and analysis.",
-    category: "embedded",
-    image: `${base}images/soccersense.PNG`,
-    // Additional modal gallery images
-    images: [
-      `${base}images/fieldsize.PNG`,
-      `${base}images/ctrlpanel.PNG`,
-      `${base}images/housing.PNG`,
-    ],
-    link: "https://github.com/rfbazan",
-    stack: ["ESP32", "Python", "HTML/CSS"],
-    detail: {
-      problem: "Position tracking data in sports provides a proven competitive advantage for athletes, but is commonly too expensive and impractical to set up for an amateur player",
-      solution: "Built a UWB-based trilateration system using ESP32 modules as anchors and a central Python backend to compute and visualize player coordinates in real time. This allowed for users to get all the benefits and precision the pros get, at a fraction of the cost.",
-      architecture: "UNDER CONSTRUCTION...",
-      challenges: "UNDER CONSTRUCTION...",
-      improvements: "UNDER CONSTRUCTION...",
-    },
-  }
   // {
   //   id: 3,
   //   title: "MIPS Microprocessor",
