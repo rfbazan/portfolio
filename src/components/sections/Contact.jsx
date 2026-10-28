@@ -45,7 +45,7 @@ export default function Contact() {
           }`}>
             Feel free to reach out at any time! This sums up my availability:
           </p>
-          <p className={`text-sm font-medium tracking-wide font-style: italic ${
+          <p className={`text-xs font-medium tracking-wide font-style: italic ${
             dark ? 'text-slate-300' : 'text-gray-700'
           }`}>
             "Here's my card. It's got my cell number, my pager number, my home number and my other pager number. I never take vacations, I never get sick. And I don't celebrate any major holidays." - Dwight Schrute

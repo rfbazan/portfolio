@@ -18,7 +18,7 @@ export default function About() {
   const { dark } = useTheme()
   const [selected, setSelected] = useState(null)
 
-  const bodyText = `text-med leading-loose ${dark ? 'text-white' : 'text-black'}`
+  const bodyText = `text-sm sm:text-base md:text-base sm:leading-loose md:leading-loose ${dark ? 'text-white' : 'text-black'}`
 
   // Close on Escape and lock page scroll while the lightbox is open
   useEffect(() => {
@@ -61,8 +61,8 @@ export default function About() {
               whileHover={{ scale: 1.15, rotate: 0, y: 0, zIndex: 30 }}
               transition={{ type: 'spring', stiffness: 260, damping: 20 }}
               style={{ zIndex: i }}
-              className={`relative shrink-0 w-24 sm:w-32 md:w-44 lg:w-48 p-1.5 pb-4 sm:p-2 sm:pb-6 rounded-sm shadow-lg border cursor-pointer ${
-                i > 0 ? '-ml-4 sm:-ml-6 md:-ml-8' : ''
+              className={`relative shrink-0 w-[17vw] sm:w-32 md:w-40 lg:w-48 p-1.5 pb-4 sm:p-2 sm:pb-6 rounded-sm shadow-lg border cursor-zoom-in ${
+                i > 0 ? '-ml-[3vw] sm:-ml-6 md:-ml-8' : ''
               } ${dark ? 'bg-slate-100 border-slate-300' : 'bg-white border-gray-400'}`}
             >
               <img

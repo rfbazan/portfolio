@@ -44,7 +44,7 @@ export default function Hero() {
           {/* Name row: name on the left, + circular headshot on the right (mobile only) */}
           <div className="flex items-center justify-between gap-4">
             <h1
-              className={`text-4xl sm:text-7xl md:text-7xl font-extrabold leading-tight tracking-wide ${
+              className={`text-5xl sm:text-7xl md:text-7xl font-extrabold leading-tight tracking-wide ${
                 dark ? 'text-slate-100' : 'text-gray-950'
               }`}
               style={{ fontVariant: 'small-caps' }}
@@ -53,7 +53,7 @@ export default function Hero() {
             </h1>
 
             {/* ===== MOBILE ONLY headshot — edit size / crop / ring here ===== */}
-            <div className={`ring-1 ring-gray-700 md:hidden shrink-0 h-32 w-32 sm:h-50 sm:w-50 rounded-full overflow-hidden shadow-md${
+            <div className={`isolate ring-1 ring-gray-700 md:hidden shrink-0 h-36 w-36 sm:h-50 sm:w-50 rounded-full overflow-hidden shadow-md ${
               dark ? 'bg-slate-700' : 'bg-blue-50'
             }`}>
               <img
@@ -67,7 +67,7 @@ export default function Hero() {
           </div>
 
           {/* Tagline */}
-          <p className={`text-base font-medium tracking-wide ${
+          <p className={`text-sm md:text-base sm:text-base font-medium sm:tracking-wide md:tracking-wide ${
             dark ? 'text-blue-400' : 'text-blue-700'
           }`}>
             Developer · Full-Stack & Automation
@@ -79,14 +79,14 @@ export default function Hero() {
           <div className={`w-50 h-px ${dark ? 'bg-orange-500' : 'bg-orange-600'}`} />
 
           {/* Intro blurb */}
-          <p className={`text-med font-medium leading-loose max-w-[50vh] ${
+          <p className={`text-sm sm:text-base md:text-base font-medium leading-relaxed sm:leading-loose md:leading-loose max-w-xl ${
             dark ? 'text-white' : 'text-black'
           }`}>
             I'm an Associate Engineer at ITC Holdings, a U.S. power grid company, where I build tools that automate slow, 
             manual engineering work. One Python tool I built turns a 16-step Windows workflow into a single click,
             saving time across our 10-person group every time it runs. 
           </p>
-          <p className={`text-med font-medium leading-loose max-w-[50vh] ${
+          <p className={`text-sm sm:text-base md:text-base font-medium leading-relaxed sm:leading-loose md:leading-loose max-w-xl ${
             dark ? 'text-white' : 'text-black'
           }`}>
             I'm looking for software engineering roles in New York City.
