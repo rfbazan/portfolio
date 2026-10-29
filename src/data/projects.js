@@ -14,7 +14,7 @@ export const projects = [
       `${base}images/leaderboard.png`,
       `${base}images/tournament.png`,
     ],
-    link: "https://github.com/rfbazan",
+    link: "https://github.com/ThexRazr/DyeTournament",
     stack: ["Flask", "Python", "HTML/CSS"],
     detail: {
       problem: "Managing brackets, team drafts, schedules, and score tracking grew more complex as more participants entered a pickleball tournament, leading to errors and confusion.",
@@ -36,7 +36,7 @@ export const projects = [
       `${base}images/ctrlpanel.PNG`,
       `${base}images/housing.PNG`,
     ],
-    link: "https://github.com/rfbazan",
+    link: "https://github.com/RazrGator/soccer-sense-UI",
     stack: ["ESP32", "Python", "Flask"],
     detail: {
       problem: "Position tracking data in sports provides a proven competitive advantage for athletes, but is commonly too expensive and impractical to set up for an amateur player",
@@ -58,7 +58,7 @@ export const projects = [
       `${base}images/feed2.PNG`,
       `${base}images/profile.PNG`,
     ],
-    link: "https://github.com/rfbazan",
+    link: "https://github.com/matisluzi/BallerzOnly",
     stack: ["React", "Node.js", "MySQL"],
     detail: {
       problem: "Existing NBA apps are bloated and ad-heavy. I wanted something that could get me just the scores about the teams I care about.",
